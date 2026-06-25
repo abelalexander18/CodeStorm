@@ -1,0 +1,158 @@
+{
+  "students": [
+    {
+      "id": "fd282a17-9df0-4322-a3a1-8fbbc1a84f32",
+      "created_at": "2026-06-25T07:50:08.944Z",
+      "name": "Test Student",
+      "branch": "Computer Science",
+      "year": 3,
+      "subjects": "OS, DBMS, Networks",
+      "phone": "+919876543210",
+      "email": "test@college.edu"
+    },
+    {
+      "id": "80aa9c52-4d49-4a96-bd00-c9d3aa706707",
+      "created_at": "2026-06-25T08:03:12.122Z",
+      "name": "Abel Alexander",
+      "branch": "Computer Science",
+      "year": 3,
+      "subjects": "OS, DBMS, Networks",
+      "phone": "+919876543211",
+      "email": "abel@college.edu"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "470991d1-164c-444c-bdff-0f8dc22198fe",
+      "created_at": "2026-06-25T07:50:16.941Z",
+      "phone": "+919876543210",
+      "title": "Prepare for OS exam",
+      "subject": "Operating Systems",
+      "deadline": "2026-07-15T04:30:00.000Z",
+      "days_remaining": 20,
+      "ai_study_plan": [
+        {
+          "date": "2026-06-25",
+          "topic": "Review course syllabus and outline the requirements for \"Prepare for OS exam\""
+        },
+        {
+          "date": "2026-06-26",
+          "topic": "Research and gather primary reference materials for Operating Systems"
+        },
+        {
+          "date": "2026-06-27",
+          "topic": "Draft the main sections and solve practice exercises"
+        },
+        {
+          "date": "2026-06-28",
+          "topic": "Consolidate notes, refine drafts, and check for accuracy"
+        },
+        {
+          "date": "2026-06-29",
+          "topic": "Finalize the task \"Prepare for OS exam\" and review all criteria before submission"
+        }
+      ]
+    },
+    {
+      "id": "8cca3caf-8dee-4602-a56f-d0ef183913b0",
+      "created_at": "2026-06-25T08:49:16.068Z",
+      "phone": "+919876543210",
+      "title": "HI",
+      "subject": "Operating System",
+      "deadline": "2026-06-26T13:56:00.000Z",
+      "days_remaining": 2,
+      "ai_study_plan": [
+        {
+          "date": "2026-06-25",
+          "topic": "Review course syllabus and outline the requirements for \"HI\""
+        },
+        {
+          "date": "2026-06-26",
+          "topic": "Finalize the task \"HI\" and review all criteria before submission"
+        }
+      ]
+    },
+    {
+      "id": "b272cbb0-15a4-4d9a-98bc-39eebc87d869",
+      "created_at": "2026-06-25T08:54:44.633Z",
+      "phone": "+919876543210",
+      "title": "Test withSupabase Task",
+      "subject": "Computer Science",
+      "deadline": "2026-07-20T04:30:00.000Z",
+      "days_remaining": 25,
+      "ai_study_plan": [
+        {
+          "date": "2026-06-25",
+          "topic": "Review course syllabus and outline the requirements for \"Test withSupabase Task\""
+        },
+        {
+          "date": "2026-06-26",
+          "topic": "Research and gather primary reference materials for Computer Science"
+        },
+        {
+          "date": "2026-06-27",
+          "topic": "Draft the main sections and solve practice exercises"
+        },
+        {
+          "date": "2026-06-28",
+          "topic": "Consolidate notes, refine drafts, and check for accuracy"
+        },
+        {
+          "date": "2026-06-29",
+          "topic": "Finalize the task \"Test withSupabase Task\" and review all criteria before submission"
+        }
+      ]
+    }
+  ],
+  "attendance": [
+    {
+      "id": "fb0a3fc1-2738-412c-ae1e-f27a1f2d484f",
+      "created_at": "2026-06-25T07:50:20.139Z",
+      "phone": "+919876543210",
+      "subject": "Operating Systems",
+      "classes_held": 40,
+      "classes_attended": 30,
+      "current_percent": 75,
+      "classes_needed": 0,
+      "risk_level": "SAFE",
+      "ai_advice": "Excellent work! Your attendance in Operating Systems is solid at 75.0%. Keep attending to maintain this status.",
+      "updated_at": "2026-06-25T07:50:36.000Z"
+    },
+    {
+      "id": "e1a233b3-9ed1-44b3-b51d-4291c501a03f",
+      "created_at": "2026-06-25T08:54:51.021Z",
+      "phone": "+919876543210",
+      "subject": "Computer Science",
+      "classes_held": 20,
+      "classes_attended": 16,
+      "current_percent": 80,
+      "classes_needed": 0,
+      "risk_level": "SAFE",
+      "ai_advice": "Excellent work! Your attendance in Computer Science is solid at 80.0%. Keep attending to maintain this status."
+    },
+    {
+      "id": "b430d1ac-f1fc-4468-8298-28972a62e312",
+      "created_at": "2026-06-25T08:55:43.237Z",
+      "phone": "+919876543210",
+      "subject": "Operating System",
+      "classes_held": 8,
+      "classes_attended": 6,
+      "current_percent": 75,
+      "classes_needed": 0,
+      "risk_level": "SAFE",
+      "ai_advice": "Excellent work! Your attendance in Operating System is solid at 75.0%. Keep attending to maintain this status."
+    },
+    {
+      "id": "aa580782-f130-4593-b69f-365682a20233",
+      "created_at": "2026-06-25T08:57:52.869Z",
+      "phone": "+919876543210",
+      "subject": "DAA",
+      "classes_held": 5,
+      "classes_attended": 2,
+      "current_percent": 40,
+      "classes_needed": 7,
+      "risk_level": "AT_RISK",
+      "ai_advice": "Your attendance in DAA is at 40.0%. Try to attend the next 7 classes consecutively to return to safe standing."
+    }
+  ]
+}
