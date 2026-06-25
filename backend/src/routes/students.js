@@ -47,7 +47,8 @@ const createStudent = withSupabase({ auth: 'none' }, async (req, ctx) => {
 // Returns student record + tasks + attendance entries
 const getStudent = withSupabase({ auth: 'none' }, async (req, ctx) => {
   try {
-    const { phone } = ctx.params;
+    const url = new URL(req.url);
+    const phone = decodeURIComponent(url.pathname.split('/').pop());
 
     const { data: student, error: sErr } = await ctx.supabase
       .from('students')

@@ -116,7 +116,8 @@ const createAttendance = withSupabase({ auth: 'none' }, async (req, ctx) => {
 // Returns all attendance entries for a student
 const getAttendance = withSupabase({ auth: 'none' }, async (req, ctx) => {
   try {
-    const { phone } = ctx.params;
+    const url = new URL(req.url);
+    const phone = decodeURIComponent(url.pathname.split('/').pop());
 
     const { data: entries, error } = await ctx.supabase
       .from('attendance')

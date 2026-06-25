@@ -81,7 +81,8 @@ const createTask = withSupabase({ auth: 'none' }, async (req, ctx) => {
 // Returns all tasks for a student
 const getTasks = withSupabase({ auth: 'none' }, async (req, ctx) => {
   try {
-    const { phone } = ctx.params;
+    const url = new URL(req.url);
+    const phone = decodeURIComponent(url.pathname.split('/').pop());
 
     const { data: tasks, error } = await ctx.supabase
       .from('tasks')
