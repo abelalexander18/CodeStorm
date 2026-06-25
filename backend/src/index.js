@@ -39,11 +39,15 @@ app.use((err, _req, res, _next) => {
 });
 
 // ── Start ───────────────────────────────────────────────────
-app.listen(PORT, () => {
-  console.log(`\n🚀 CampusFlow API running at http://localhost:${PORT}`);
-  console.log(`   Health check: http://localhost:${PORT}/health`);
-  console.log(`   Supabase URL: ${process.env.SUPABASE_URL || '(not set)'}`);
-  console.log(`   Groq key set: ${!!process.env.GROQ_API_KEY}`);
-  console.log(`   Deadline webhook: ${process.env.N8N_DEADLINE_WEBHOOK}`);
-  console.log(`   Attendance webhook: ${process.env.N8N_ATTENDANCE_WEBHOOK}\n`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`\n🚀 CampusFlow API running at http://localhost:${PORT}`);
+    console.log(`   Health check: http://localhost:${PORT}/health`);
+    console.log(`   Supabase URL: ${process.env.SUPABASE_URL || '(not set)'}`);
+    console.log(`   Groq key set: ${!!process.env.GROQ_API_KEY}`);
+    console.log(`   Deadline webhook: ${process.env.N8N_DEADLINE_WEBHOOK}`);
+    console.log(`   Attendance webhook: ${process.env.N8N_ATTENDANCE_WEBHOOK}\n`);
+  });
+}
+
+module.exports = app;
